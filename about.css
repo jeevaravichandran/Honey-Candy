@@ -3,8 +3,17 @@
     margin: 0;
 }
 
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .about-us {
@@ -13,6 +22,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
+    flex: 1;
 }
 
 .about-us .about {
@@ -42,28 +52,22 @@ body {
     cursor: pointer;
 }
 
-.about-image {
-    width: 400px;
-    height: 450px;
-    border: 1px solid black;
+.about-us .about button:hover {
+    background-color: black;
+    color: white;
 }
 
 .about-image img {
-    position: relative;
-    left: -8%;
-    top: -5%;
     width: 100%;
     height: 450px;
-    margin-top: 40px;
-
 }
 
 /* Media Query */
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:750px) {
 
     .about-us {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .about-us .about {
@@ -87,16 +91,10 @@ body {
         margin-top: 10px;
     }
 
-    .about-image {
-        margin-top: 50px;
-        width: 300px;
-        height: 170px;
-    }
-
     .about-image img {
+        margin-top: 50px;
         height: 250px;
         width: 100%;
-        left: -5%;
     }
 
 }

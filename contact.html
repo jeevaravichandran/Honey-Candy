@@ -1,134 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Contact</title>
-    <!-- link google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <!-- link icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- my css -->
-     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="contact.css" />
-    <script src="script.js" defer></script>
-    <script src="contact.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <nav>
-      <h1><a href="index">Honey Candy</a></h1>
-      <div class="navbar">
-        <p><a href="index">Home</a></p>
-        <p><a href="foods">Foods</a></p>
-        <p><a href="book-a-table">Book A Table</a></p>
-        <p><a href="about">About</a></p>
-        <p><a href="contact">Contact</a></p>
-      </div>
-      <div class="side-bar">
-        <p><i onclick="openSideNav()" class="fa-solid fa-bars"></i></p>
-      </div>
-    </nav>
-    <div class="sideNavbar-links">
-      <div class="close-bar">
-        <p><i onclick="closeSideNav()" class="fa-solid fa-xmark"></i></p>
-      </div>
-      <div class="sideNavbar-link">
-        <p><a href="index">Home</a></p>
-        <p><a href="foods">Foods</a></p>
-        <p><a href="book-a-table">Book A Table</a></p>
-        <p><a href="about">About</a></p>
-        <p><a href="contact">Contact</a></p>
-      </div>
+  <title>Contact</title>
+  <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- link icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- my css -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="contact.css" />
+  <script src="script.js" defer></script>
+  <script src="contact.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <h1><a href="index">Honey Candy</a></h1>
+    <div class="navbar">
+      <p><a href="index">Home</a></p>
+      <p><a href="foods">Foods</a></p>
+      <p><a href="book-a-table">Book A Table</a></p>
+      <p><a href="about">About</a></p>
+      <p><a href="contact">Contact</a></p>
     </div>
-    <div class="contact">
-      <div class="get-in-touch">
-        <h1>GET-IN-TOUCH</h1>
-        <p>
-          You have a piece of advice or a suggestion that you would like to
-          share with us? Feel free to contact us.
-        </p>
-        <form id="feedback-form">
-          <label id="name-lbl" for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your Name" />
-          <label id="phoneNo-lbl" for="phoneNo">Phone</label>
-          <input
-            type="number"
-            id="phoneNo"
-            placeholder="Enter your Phone Number"
-          />
-          <label id="rating-lbl" for="rating">Rating (?/10)</label>
-          <input
-            type="number"
-            id="rating"
-            placeholder="Your rating for 10"
-            min="0"
-            max="10"
-          />
-          <label id="feedback-lbl" for="feedback">Feedback</label>
-          <textarea id="feedback" placeholder="Enter Message Here"></textarea>
-          <button onclick="feedbackFormValidation(event)" id="send-feedback">
-            Send
-          </button>
-        </form>
-      </div>
-      <div class="find-us">
-        <h1>FIND US</h1>
-        <ul>
-          <li>Address:40 park ave,Salem</li>
-          <li>Phone:+91 9876543210</li>
-          <li>Email: honeycandy@gmail.com</li>
-        </ul>
-        <img src="img/shop location.png" alt="" />
-      </div>
+    <div class="side-bar">
+      <p><i onclick="openSideNav()" class="fa-solid fa-bars"></i></p>
     </div>
-    <div class="overlay-response">
-      <div class="response">
-        <p>Thank You For Your Feedback!!!<i class="fa-solid fa-check"></i></p>
-        <button onclick="closePopUpResponse()">OK</button>
-      </div>
+  </nav>
+  <div class="sideNavbar-links">
+    <div class="close-bar">
+      <p><i onclick="closeSideNav()" class="fa-solid fa-xmark"></i></p>
     </div>
-    <footer>
-      <div class="info">
-        <h2>Honey Candy</h2>
-        <p>
-          Fresh Food <i class="fa-solid fa-burger"></i> || Free Home Delivery
-          <i class="fa-solid fa-truck"></i>
-        </p>
-        <div class="icon">
-          <a href="https://www.facebook.com"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.twitter.com"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.youtube.com"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-          <a href="https://www.pinterest.com"
-            ><i class="fa-brands fa-pinterest"></i
-          ></a>
-        </div>
-      </div>
-      <p style="margin-top: 25px">
-        Copyrights <i class="fa-regular fa-copyright"></i> 2025 honeycandy. All
-        rights reserved
+    <div class="sideNavbar-link">
+      <p><a href="index">Home</a></p>
+      <p><a href="foods">Foods</a></p>
+      <p><a href="book-a-table">Book A Table</a></p>
+      <p><a href="about">About</a></p>
+      <p><a href="contact">Contact</a></p>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="get-in-touch">
+      <h1>GET-IN-TOUCH</h1>
+      <p>
+        You have a piece of advice or a suggestion that you would like to
+        share with us? Feel free to contact us.
       </p>
-    </footer>
-  </body>
+      <form id="feedback-form">
+        <label id="name-lbl" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name" />
+        <label id="phoneNo-lbl" for="phoneNo">Phone</label>
+        <input type="number" id="phoneNo" placeholder="Enter your Phone Number" />
+        <label id="rating-lbl" for="rating">Rating (?/10)</label>
+        <input type="number" id="rating" placeholder="Your rating for 10" min="0" max="10" />
+        <label id="feedback-lbl" for="feedback">Feedback</label>
+        <textarea id="feedback" placeholder="Enter Message Here"></textarea>
+        <button onclick="feedbackFormValidation(event)" id="send-feedback">
+          Send
+        </button>
+      </form>
+    </div>
+    <div class="find-us">
+      <h1>FIND US</h1>
+      <ul>
+        <li>Address:40 park ave,Salem</li>
+        <li>Phone:+91 9876543210</li>
+        <li>Email: honeycandy@gmail.com</li>
+      </ul>
+      <img src="img/shop location.png" alt="" />
+    </div>
+  </div>
+  <div class="overlay-response">
+    <div class="response">
+      <p>Thank You For Your Feedback!!!<i class="fa-solid fa-check"></i></p>
+      <button onclick="closePopUpResponse()">OK</button>
+    </div>
+  </div>
+  <footer>
+    <div class="info">
+      <h2>Honey Candy</h2>
+      <p>
+        Fresh Food <i class="fa-solid fa-burger"></i> || Free Home Delivery
+        <i class="fa-solid fa-truck"></i>
+      </p>
+      <div class="icon">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+    <p style="margin-top: 25px">
+      Copyrights <i class="fa-regular fa-copyright"></i> 2025 honeycandy. All
+      rights reserved
+    </p>
+  </footer>
+</body>
+
 </html>

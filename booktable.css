@@ -3,8 +3,20 @@
   margin: 0;
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-container {
+  flex: 1;
 }
 
 .book-table h1 {
@@ -134,22 +146,28 @@ form .book-request button {
 
 /* Media Query */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
 
   .book-table h1 {
     font-size: 20px;
   }
 
   .book-table p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   form .book-tables {
     flex-direction: column;
   }
 
-  form .book-tables span {
+  form .book-tables span,
+  t {
     width: 100%;
+  }
+
+  form .book-tables span,
+  form .book-request label {
+    font-size: 10px;
   }
 
   form .book-tables span input {

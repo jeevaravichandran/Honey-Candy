@@ -3,8 +3,16 @@
   margin: 0;
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact {
@@ -12,6 +20,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .contact .get-in-touch {
@@ -154,7 +163,7 @@ body {
 
 /* Media Query */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
 
   .contact {
     flex-direction: row;
@@ -169,11 +178,11 @@ body {
   }
 
   .contact .get-in-touch p {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .contact .get-in-touch form label {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .contact .get-in-touch form button {
@@ -189,7 +198,7 @@ body {
   }
 
   .contact .find-us li {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .response {

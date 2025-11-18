@@ -20,10 +20,10 @@ search.addEventListener("input", function (event) {
       item[count].style.display = "none";
     }
   }
-        
-    if(enteredText === ""){
-        document.getElementById("title").style.display = "block";
-    }
+
+  if (enteredText === "") {
+    document.getElementById("title").style.display = "block";
+  }
 });
 
 

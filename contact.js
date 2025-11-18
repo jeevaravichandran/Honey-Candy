@@ -20,7 +20,7 @@ function feedbackFormValidation(event) {
         backToNormal("name-lbl", "Name", originalColor);
     }
 
-    else if(!phoneNoRegExp.test(phoneNo)){
+    else if (!phoneNoRegExp.test(phoneNo)) {
         showError("phoneNo-lbl", "*Invalid Phone Number");
         backToNormal("phoneNo-lbl", "Phone", originalColor);
     }
@@ -36,8 +36,8 @@ function feedbackFormValidation(event) {
     //Feedback Validation
 
     else if (feedback === "") {
-       showError("feedback-lbl", "*Feedback message Required");
-       backToNormal("feedback-lbl", "Feedback", originalColor);
+        showError("feedback-lbl", "*Feedback message Required");
+        backToNormal("feedback-lbl", "Feedback", originalColor);
     }
     // Form Validation and Show Popup Layer and Popup message
     else {
@@ -47,22 +47,22 @@ function feedbackFormValidation(event) {
 }
 
 function showError(id, message) {
-  document.getElementById(id).innerText = message;
-  document.getElementById(id).style.color = "red";
-  document.getElementById(id).style.fontWeight = "bold";
+    document.getElementById(id).innerText = message;
+    document.getElementById(id).style.color = "red";
+    document.getElementById(id).style.fontWeight = "bold";
 }
 
 function backToNormal(id, message, originalColor) {
-  setTimeout(() => {
-    document.getElementById(id).innerHTML = message;
-    document.getElementById(id).style.color = originalColor;
-    document.getElementById(id).style.fontWeight = "normal";
-  }, 3000);
+    setTimeout(() => {
+        document.getElementById(id).innerHTML = message;
+        document.getElementById(id).style.color = originalColor;
+        document.getElementById(id).style.fontWeight = "normal";
+    }, 3000);
 }
 
-function showResponse(){
+function showResponse() {
     setTimeout(function () {
-            document.querySelector(".overlay-response").style.display = "flex"
+        document.querySelector(".overlay-response").style.display = "flex"
     }, 2000)
 }
 
