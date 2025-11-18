@@ -157,7 +157,7 @@ body {
 @media screen and (max-width: 640px) {
 
   .contact {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .contact .get-in-touch {
@@ -194,6 +194,6 @@ body {
 
   .response {
     width: 50%;
-    font-size: 15px;
+    font-size: 13px;
   }
 }
