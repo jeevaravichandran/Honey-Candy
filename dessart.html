@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dessarts | Honey Candy</title>
+    <title>Desserts</title>
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my css -->
     <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,120 +27,116 @@
         <div class="navbar">
             <p><a href="index">Home</a></p>
             <p><a href="foods">Foods</a></p>
-            <p><a href="booktable">Table Booking</a></p>
+            <p><a href="book-a-table">Book A Table</a></p>
             <p><a href="about">About</a></p>
             <p><a href="contact">Contact</a></p>
         </div>
         <div class="side-bar">
-            <p><i onclick="opensidenav()" class="fa-solid fa-bars"></i></p>
+            <p><i onclick="openSideNav()" class="fa-solid fa-bars"></i></p>
         </div>
     </nav>
-    <div class="sidenavbar-links">
+    <div class="sideNavbar-links">
         <div class="close-bar">
-            <p><i onclick="closesidenav()" class="fa-solid fa-xmark"></i></p>
+            <p><i onclick="closeSideNav()" class="fa-solid fa-xmark"></i></p>
         </div>
-        <div class="sidenavbar-link">
+        <div class="sideNavbar-link">
             <p><a href="index">Home</a></p>
             <p><a href="foods">Foods</a></p>
-            <p><a href="booktable">Table Booking</a></p>
+            <p><a href="book-a-table">Book A Table</a></p>
             <p><a href="about">About</a></p>
             <p><a href="contact">Contact</a></p>
         </div>
     </div>
     <div class="searchbar">
         <form>
-            <input id="search" type="text" placeholder="Search Here">
+            <input id="search" type="text" placeholder="Search Food....">
             <i class="fa-solid fa-search"></i>
         </form>
     </div>
     <div class="food-container">
-        <h1>Dessarts</h1>
+        <h1 id="title">Desserts</h1>
         <div class="food-items">
             <div class="food-item">
                 <img src="img/DC-Apple Cinnamon Mini-Pies.jpg">
                 <h3>Apple Mini-Pies<i class="fa-solid fa-indian-rupee-sign ">140</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-cassata-cake-recipe-305361-hero-01-e4a4b44716d64079b1dd2dee196b472d.webp">
                 <h3>Cassata Cake<i class="fa-solid fa-indian-rupee-sign ">170</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Chocolate Banana Crepes.jpg">
                 <h3>Chocolate Banana Crapes<i class="fa-solid fa-indian-rupee-sign ">150</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Chocolate-Ice-Cream-3.jpg">
                 <h3>Choco Ice-Cream<i class="fa-solid fa-indian-rupee-sign ">100</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Chocolate Chip Mint Ice Cream Cookies.jpg">
                 <h3>Chocochip Mint Cookies<i class="fa-solid fa-indian-rupee-sign ">220</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Cookies and Cream Cheesecake.jpg">
                 <h3>Cream Cheesecake<i class="fa-solid fa-indian-rupee-sign ">175</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Dried Fruit & Nut Fudge.jpg">
                 <h3>Dried Fruit & Nut Fudge<i class="fa-solid fa-indian-rupee-sign ">200</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-fruit-salad-1.jpg">
                 <h3>Fruit Salad<i class="fa-solid fa-indian-rupee-sign ">110</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Home Made Lemon Jelly Doughnuts.jpg">
                 <h3>Lemon Jelly Doughnuts<i class="fa-solid fa-indian-rupee-sign ">190</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Hot-Gulabjamun-with-I.jpg">
                 <h3>Hot Gulabjamun<i class="fa-solid fa-indian-rupee-sign ">160</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Oreo Cheesecake.jpg">
                 <h3>Oreo Cheesecake<i class="fa-solid fa-indian-rupee-sign ">120</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Raspberry Brownie Cheesecake Trifles.jpg">
                 <h3>Raspberry Brownie<i class="fa-solid fa-indian-rupee-sign ">120</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Salted Caramel Bacon Brownie.jpg">
                 <h3>Caramel Bacon Brownie<i class="fa-solid fa-indian-rupee-sign ">110</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Tiramisu Cupcakes.jpg">
                 <h3>Tiramisu Cupcakes<i class="fa-solid fa-indian-rupee-sign ">80</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Vanilla Ice Cream on Honey Butter Toast.jpg">
                 <h3>Vannila on Honey Toast<i class="fa-solid fa-indian-rupee-sign ">300</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/DC-Warm Belgian Waffles And Ice Cream.jpg">
                 <h3>Belgian Wafflesi <i class="fa-solid fa-indian-rupee-sign ">190</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
         </div>
-    </div>
-    <div class="unavail">
-        <h3>This item is Unavailable!!!</h3>
-        <i class="fa-regular fa-face-grin-beam-sweat"></i>
     </div>
     <footer>
         <div class="info">
@@ -156,6 +154,5 @@
         <p style="margin-top: 25px;">Copyrights <i class="fa-regular fa-copyright"></i> 2025
             honeycandy. All rights reserved</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

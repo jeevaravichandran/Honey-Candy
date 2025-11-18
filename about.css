@@ -7,78 +7,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 a {
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: darkolivegreen;
-    text-decoration: none;
-}
-
-nav .navbar {
-    display: flex;
-    column-gap: 30px;
-
-}
-
-nav .navbar a {
-    color: darkolivegreen;
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-nav .navbar a:hover {
-    text-decoration: underline;
-}
-
-nav .side-bar {
-    display: none;
-    color: darkolivegreen;
-    cursor: pointer;
-    font-size: 20px;
-
-}
-
-.sidenavbar-links {
-    background-color: darkolivegreen;
-    height: 100%;
-    width: 40%;
-    position: fixed;
-    top: 0;
-    left: -50%;
-    padding: 20px;
-    transition: 2s;
-    z-index: 2;
-
-}
-
-.sidenavbar-links .close-bar {
-    text-align: right;
-    font-size: x-large;
-    cursor: pointer;
-    color: white;
-}
-
-.sidenavbar-links .sidenavbar-link p {
-    padding: 10px;
-    margin-top: 10px;
-
-}
-
-.sidenavbar-links .sidenavbar-link a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-
-}
-
 .about-us {
     display: flex;
     justify-content: space-around;
@@ -130,56 +58,9 @@ nav .side-bar {
 
 }
 
-footer {
-    background-color: darkolivegreen;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer .icon {
-    margin-top: 7px;
-}
-
-footer .icon a {
-    text-decoration: none;
-}
-
-footer .icon i {
-    background-color: white;
-    color: darkolivegreen;
-    border-radius: 50%;
-    padding: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-footer .icon i:hover {
-    transform: translateY(-5px);
-}
-
-
-
-
-
 /* Media Query */
 
 @media screen and (max-width:640px) {
-
-    nav h1 a {
-        font-size: 30px;
-    }
-
-    nav .side-bar {
-        display: block;
-    }
-
-    nav .navbar {
-        display: none;
-    }
 
     .about-us {
         flex-direction: column;
@@ -216,15 +97,6 @@ footer .icon i:hover {
         height: 250px;
         width: 100%;
         left: -5%;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-
-    footer .icon i {
-        padding: 5px;
-        font-size: 14px;
     }
 
 }

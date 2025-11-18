@@ -56,7 +56,7 @@ nav .side-bar i {
     font-size: 20px;
 }
 
-.sidenavbar-links {
+.sideNavbar-links {
 
     background-color: darkolivegreen;
     height: 100%;
@@ -70,20 +70,20 @@ nav .side-bar i {
 
 }
 
-.sidenavbar-links .close-bar {
+.sideNavbar-links .close-bar {
     text-align: right;
     font-size: x-large;
     cursor: pointer;
     color: white;
 }
 
-.sidenavbar-links .sidenavbar-link p {
+.sideNavbar-links .sideNavbar-link p {
     padding: 10px;
     margin-top: 10px;
 
 }
 
-.sidenavbar-links .sidenavbar-link a {
+.sideNavbar-links .sideNavbar-link a {
     text-decoration: none;
     color: white;
     cursor: pointer;

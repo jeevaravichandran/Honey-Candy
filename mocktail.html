@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mocktails | Honey Candy</title>
+    <title>Mocktail</title>
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my css -->
     <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,22 +27,22 @@
         <div class="navbar">
             <p><a href="index">Home</a></p>
             <p><a href="foods">Foods</a></p>
-            <p><a href="booktable">Table Booking</a></p>
+            <p><a href="book-a-table">Book A Table</a></p>
             <p><a href="about">About</a></p>
             <p><a href="contact">Contact</a></p>
         </div>
         <div class="side-bar">
-            <p><i onclick="opensidenav()" class="fa-solid fa-bars"></i></p>
+            <p><i onclick="openSideNav()" class="fa-solid fa-bars"></i></p>
         </div>
     </nav>
-    <div class="sidenavbar-links">
+    <div class="sideNavbar-links">
         <div class="close-bar">
-            <p><i onclick="closesidenav()" class="fa-solid fa-xmark"></i></p>
+            <p><i onclick="closeSideNav()" class="fa-solid fa-xmark"></i></p>
         </div>
-        <div class="sidenavbar-link">
+        <div class="sideNavbar-link">
             <p><a href="index">Home</a></p>
             <p><a href="foods">Foods</a></p>
-            <p><a href="booktable">Table Booking</a></p>
+            <p><a href="book-a-table">Book A Table</a></p>
             <p><a href="about">About</a></p>
             <p><a href="contact">Contact</a></p>
         </div>
@@ -52,93 +54,89 @@
         </form>
     </div>
     <div class="food-container">
-        <h1>Mocktails</h1>
+        <h1 id="title">Mocktail</h1>
         <div class="food-items">
             <div class="food-item">
                 <img src="img/JC-Arnold Palmer.jpg">
                 <h3>Arnold Palmer<i class="fa-solid fa-indian-rupee-sign ">110</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Club Soda with a Splash of Cranberry Juice.jpg">
                 <h3>Soda with Cranberry<i class="fa-solid fa-indian-rupee-sign ">170</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Club Soda with Lime.jpg">
                 <h3>Soda with Lime<i class="fa-solid fa-indian-rupee-sign ">150</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Coconut Water.jpg">
                 <h3>Coconut Water<i class="fa-solid fa-indian-rupee-sign ">90</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Cranberry Juice, Ginger Beer, and Soda Water.jpg">
                 <h3>Ginger with Cranberry<i class="fa-solid fa-indian-rupee-sign ">200</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Iced Tea.jpg">
                 <h3>Iced Tea<i class="fa-solid fa-indian-rupee-sign ">115</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Juice Spritzer.jpg">
                 <h3>Juice Spritzer<i class="fa-solid fa-indian-rupee-sign ">100</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Kombucha.jpg">
                 <h3>Kombucha<i class="fa-solid fa-indian-rupee-sign ">110</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Mocktails.jpg">
-                <h3>Mocktails<i class="fa-solid fa-indian-rupee-sign ">150</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <h3>Rose Mojito <i class="fa-solid fa-indian-rupee-sign ">150</i></h3>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Roy Rogers.jpg">
                 <h3>Roy Rogers<i class="fa-solid fa-indian-rupee-sign ">140</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Shirley Temple.jpg">
                 <h3>Shirley Temple<i class="fa-solid fa-indian-rupee-sign ">120</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Soda.jpg">
                 <h3>Soda<i class="fa-solid fa-indian-rupee-sign ">70</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Virgin Bloody Mary.jpg">
                 <h3>Virgin Blood Marry<i class="fa-solid fa-indian-rupee-sign ">190</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JC-Virgin Mojito.jpg">
                 <h3>Virgin Mojito<i class="fa-solid fa-indian-rupee-sign ">180</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JCBlue Spirulina Chia Puddings.jpg">
                 <h3>Blue Spirulina Puddings<i class="fa-solid fa-indian-rupee-sign ">200</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
             <div class="food-item">
                 <img src="img/JCGinger Beer with Lime.jpg">
                 <h3>Ginger Beer With Lime<i class="fa-solid fa-indian-rupee-sign ">190</i></h3>
-                <button>Order Now<i class="fa-solid fa-arrow-right"></i></button>
+                <button>Order Now<i class="fa-solid fa-cart-arrow-down"></i></button>
             </div>
         </div>
-    </div>
-    <div class="unavail">
-        <h3>This item is Unavailable!!! </h3>
-        <i class="fa-regular fa-face-grin-beam-sweat"></i>
     </div>
     <footer>
         <div class="info">
@@ -156,6 +154,5 @@
         <p style="margin-top: 25px;">Copyrights <i class="fa-regular fa-copyright"></i> 2025
             honeycandy. All rights reserved</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

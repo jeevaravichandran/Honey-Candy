@@ -2,9 +2,14 @@
     padding: 0;
     margin: 0;
 }
-
+html, body{
+    margin: 0;
+    height: 100%;
+}
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -46,7 +51,7 @@ nav .side-bar {
 
 }
 
-.sidenavbar-links {
+.sideNavbar-links {
     background-color: darkolivegreen;
     height: 100%;
     width: 40%;
@@ -59,20 +64,20 @@ nav .side-bar {
 
 }
 
-.sidenavbar-links .close-bar {
+.sideNavbar-links .close-bar {
     text-align: right;
     font-size: x-large;
     cursor: pointer;
     color: white;
 }
 
-.sidenavbar-links .sidenavbar-link p {
+.sideNavbar-links .sideNavbar-link p {
     padding: 10px;
     margin-top: 10px;
 
 }
 
-.sidenavbar-links .sidenavbar-link a {
+.sideNavbar-links .sideNavbar-link a {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -111,8 +116,12 @@ nav .side-bar {
     cursor: pointer;
 }
 
+.food-container{
+    flex: 1;
+}
+
 .food-container h1 {
-    margin-left: 3%;
+    text-align: center;
     margin-top: 30px;
 }
 
@@ -154,17 +163,9 @@ nav .side-bar {
     cursor: pointer;
 }
 
-.unavail {
-    text-align: center;
-    display: none;
-    margin-top: 40px;
-}
-
-.unavail i {
-    margin-top: 10px;
-    font-size: 80px;
-    background-color: yellow;
-    border-radius: 50%;
+.food-items .food-item button:hover{
+    background-color: black;
+    color: white;
 }
 
 footer {
@@ -173,6 +174,7 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 40px;
+    bottom: 0;
 }
 
 footer .icon {
@@ -221,10 +223,6 @@ footer .icon i:hover {
         margin-left: 5%;
         margin-top: 30px;
         font-size: 23px;
-    }
-
-    .unavail i {
-        font-size: 30px;
     }
 
     .food-items {

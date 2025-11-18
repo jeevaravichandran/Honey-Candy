@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table</title>
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- my css -->
+     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="booktable.css" />
+    <script src="script.js" defer></script>
+    <script src="booktable.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <h1><a href="index">Honey Candy</a></h1>
+      <div class="navbar">
+        <p><a href="index">Home</a></p>
+        <p><a href="foods">Foods</a></p>
+        <p><a href="book-a-table">Book A Table</a></p>
+        <p><a href="about">About</a></p>
+        <p><a href="contact">Contact</a></p>
+      </div>
+      <div class="side-bar">
+        <p><i onclick="openSideNav()" class="fa-solid fa-bars"></i></p>
+      </div>
+    </nav>
+    <div class="sideNavbar-links">
+      <div class="close-bar">
+        <p><i onclick="closeSideNav()" class="fa-solid fa-xmark"></i></p>
+      </div>
+      <div class="sideNavbar-link">
+        <p><a href="index">Home</a></p>
+        <p><a href="foods">Foods</a></p>
+        <p><a href="book-a-table">Book A Table</a></p>
+        <p><a href="about">About</a></p>
+        <p><a href="contact">Contact</a></p>
+      </div>
+    </div>
+
+    <div class="book-table">
+      <h1>BOOK A TABLE</h1>
+      <p>
+        You may book a table any time online or by calling +91 9876543210 during
+        our opening hours.
+      </p>
+      <p>(Shop Time - Morning 10.00 AM to Night 11.00 PM)</p>
+    </div>
+    <form id="booking-info-form">
+      <div class="book-tables">
+        <span>
+          <label id="name-lbl" for="name">Name*</label>
+          <input type="text" id="name" name="name" />
+        </span>
+        <span>
+          <label id="phoneNo-lbl" for="phoneNo">Phone*</label>
+          <input type="number" id="phoneNo" name="phoneNo" />
+        </span>
+        <span>
+          <label id="bookingDate-lbl" for="bookingDate">Date*</label>
+          <input type="date" id="bookingDate" name="bookingDate" />
+        </span>
+        <span>
+          <label id="bookingTime-lbl" for="bookingTime">Time*</label>
+          <input type="time" id="bookingTime" name="bookingTime" />
+        </span>
+
+        <span>
+          <label id="seatCount-lbl" for="seatCount">Seats*</label>
+          <input
+            type="number"
+            min="1"
+            max="10"
+            id="seatCount"
+            name="seatCount"
+          />
+        </span>
+        <span>
+          <label id="acType-lbl">Ac / Non-Ac*</label>
+          <select id="acType" name="acType">
+            <option>NON-AC</option>
+            <option>AC</option>
+          </select>
+        </span>
+      </div>
+      <div class="book-request">
+        <label for="specialRequest"
+          >Special Requests (Extra Charges is Included)</label
+        >
+        <textarea id="specialRequest" name="specialRequest"></textarea>
+        <button type="submit" onclick="tableBookingFormValidation(event)">
+          Book Now
+        </button>
+      </div>
+    </form>
+    <div class="overlay-booking">
+      <div class="booking">
+        <p id="status"></p>
+      </div>
+    </div>
+    <footer>
+      <div class="info">
+        <h2>Honey Candy</h2>
+        <p>
+          Fresh Food <i class="fa-solid fa-burger"></i> || Free Home Delivery
+          <i class="fa-solid fa-truck"></i>
+        </p>
+        <div class="icon">
+          <a href="https://www.facebook.com"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://www.pinterest.com"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+        </div>
+      </div>
+      <p style="margin-top: 25px">
+        Copyrights <i class="fa-regular fa-copyright"></i> 2025 honeycandy. All
+        rights reserved
+      </p>
+    </footer>
+  </body>
+</html>
