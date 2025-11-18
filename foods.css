@@ -84,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-form button {
+.main-coarse a button {
     background-color: darkolivegreen;
     color: white;
     padding: 20px 30px;
